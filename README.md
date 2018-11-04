@@ -7,3 +7,6 @@ ITU Capstone Project
 - Download training data from https://www.kaggle.com/account/login?returnUrl=%2Fsnapcrack%2Fall-the-news%2Fversion%2F4
 - Unzip the data under `articles_data` and run `python trainer.py`
 
+# Running the web app
+- `pip install flask`
+- Run `FLASK_APP=web/server.py flask run` from the root folder of the project.
