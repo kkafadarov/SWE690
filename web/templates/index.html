@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+
+   <script>
+   $(document).ready(function(){
+     $("button").click(function(){
+       var url = $("#typetext").val();
+       $("#output").load('/generate/' + url);
+
+     });
+
+   });
+ </script>
+
   <title>Textify</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="static/textify.css">
