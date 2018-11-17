@@ -10,3 +10,4 @@ ITU Capstone Project
 # Running the web app
 - `pip install flask`
 - Run `FLASK_APP=web/server.py flask run` from the root folder of the project.
+- The app should now be running at `localhost:5000`
