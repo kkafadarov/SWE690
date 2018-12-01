@@ -1,14 +1,16 @@
 from flask import Flask
 from flask import render_template
+from flask import request
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def index_page():
-    return render_template('index.html')
+  return render_template('index.html')
 
-@app.route('/generate/<string:text_type>')
-def generate_text(text_type):
-    # show the post with the given id, the id is an integer
-    return 'Hi - this is a sample but you asked for text type %s' % text_type
+@app.route('/generate')
+def generate_text():
+  text_type  = request.args.get('textType', '')
+  length  = request.args.get('length', '')
+  return 'Type: ' + text_type + ' length ' + length

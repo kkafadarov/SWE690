@@ -7,8 +7,9 @@
    <script>
    $(document).ready(function(){
      $("button").click(function(){
-       var url = $("#typetext").val();
-       $("#output").load('/generate/' + url);
+       var textType = $("#typetext").val();
+       var length = $('#length').val()
+       $("#output").load('/generate?textType=' + textType + '&length=' + length);
 
      });
 
@@ -41,7 +42,7 @@
          </select>
             <br>
 
-            <label for="lenght"> Length</label>
+            <label for="length">Length</label>
             <input id="length" type="number" name="length" required>
             <br>
 
