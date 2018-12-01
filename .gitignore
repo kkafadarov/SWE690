@@ -1,3 +1,5 @@
 .DS_Store
 articles_data/
+tweets_data/
+*.json
 *.pyc

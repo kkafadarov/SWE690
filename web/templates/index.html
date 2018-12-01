@@ -10,7 +10,6 @@
        var textType = $("#typetext").val();
        var length = $('#length').val()
        $("#output").load('/generate?textType=' + textType + '&length=' + length);
-
      });
 
    });
@@ -42,7 +41,7 @@
          </select>
             <br>
 
-            <label for="length">Length</label>
+            <label for="length">Target Length</label>
             <input id="length" type="number" name="length" required>
             <br>
 
